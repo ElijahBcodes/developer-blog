@@ -1,9 +1,12 @@
-<h1>New blog</h1>
+<h3>Add a New Blog Post</h3>
+<%= form_with model: @blogs do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title%>
 
-<%= render "form", blog: @blog %>
+    <br>
+    <%= form.label :content %>
+    <%= form.text_field :content %>
 
-<br>
-
-<div>
-  <%= link_to "Back to blogs", blogs_path %>
-</div>
+    <br>
+    <%= form.submit 'Add Blog Post'%>
+<% end %>
