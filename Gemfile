@@ -64,5 +64,5 @@ group :development do
   # gem "spring"
 end
 
-
+gem 'pg'
 gem "rspec-rails", "~> 6.1"
